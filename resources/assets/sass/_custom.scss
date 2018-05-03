@@ -1,0 +1,398 @@
+
+
+//Logo Font
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+
+
+//Variables
+$primary: #003366;
+$secondary: #d3d3d3;
+$error: #d60000;
+$warning: #f48600;
+
+body
+{
+    background-color: $secondary;
+}
+
+.non-dash-main
+{
+    margin-top: 60.8px !important;
+}
+
+
+.navbar-brand
+{
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 32px;
+}
+
+.active{
+    background-color: $secondary;
+    p{
+        color: #353130;
+    }
+}
+
+.sideNav{
+    height: calc(100vh);
+    background-color: $primary;
+    padding: 0;
+    margin-top: 77.43px;
+}
+
+.main{
+    background-color: $secondary;
+    margin-top: 77.43px;
+    padding-bottom: 15px;
+}
+
+.topNav-item
+{
+    font-size: 18px;
+    color: white !important;
+
+    &:hover
+    {
+        color: $warning !important;
+    }
+}
+
+#welcomeMsg{
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#sideNavMenu{
+    text-align: center;
+}
+
+#sideNavMenu li a{
+    display: block;
+    color: $secondary;
+}
+
+.sideMenuText{
+    color: white;
+}
+
+#sideNavMenu li a:hover{
+    background-color: grey;
+}
+
+.side-icon{
+    font-size: 36px;
+}
+
+li p{
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-tile{
+    border: 1px solid black;
+    margin: 16px 0 16px 16px;
+    padding: 0px;
+    
+    .tile-title-container{
+        padding: 0;
+        margin: 0 !important;
+        text-align: center;
+        border-bottom: solid 1px black;
+        background-color: white;
+    }
+    .tile-title{
+        font-weight: bold;
+        margin: 0;
+        padding: 5px 0px 5px 0px;
+    }
+    .graph-container{
+        height: 200px;
+    }
+}
+
+//Index Page Styling
+.jumbotron{
+    background-image: url("/img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+
+    h1{
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+
+    h2{
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    
+    .btn{
+        margin-top: 30px; 
+    }
+}
+
+.promo-box
+{
+    text-align: center;
+    padding-top: 30px;
+    
+    p
+    {
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.promo-box:nth-child(2)
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer
+{
+    margin-top: 50px;
+    background-color: $primary;
+    color: white;
+    padding-bottom: 20px;
+
+    h3
+    {
+        padding-top: 20px;
+    }
+
+    p
+    {
+        padding-right: 20px;
+    }
+
+    ul
+    {
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+
+        li a
+        {
+            color: white;
+        }
+    }
+}
+
+.form-card
+{
+    margin-top: 50px;
+}
+
+.card-header
+{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#rating-container
+{
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.card-deck
+{
+    margin-top: 15px;
+}
+
+#updateMileageForm
+{
+    margin: 50px 20px 0px 20px;
+}
+
+#todo-container
+{
+    margin-top: 15px;
+
+    .todo-overdue
+    {
+        color: $error;
+        font-weight: bold;
+    }
+
+    .todo-due
+    {
+        color: $warning;
+        font-weight: bold;
+    }
+}
+
+.badge-pill{
+    font-size: 12px;
+}
+
+.badge-pill-error
+{
+    background-color: $error;
+}
+
+.badge-pill-warning
+{
+    background-color: $warning;
+}
+
+.login-form
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#historyTable
+{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 0.25rem;
+}
+
+#addFillupForm, #addExpenditureForm
+{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#map-container
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#map
+{
+    height: 400px;
+    width: 100%;
+}
+
+#addExpenditureDropdown
+{
+    height: 100px;
+}
+
+#totalSpent
+{
+    background-color: #f8f9fa;
+}
+
+.active-link
+{
+
+    border-bottom: 1.5px solid #007bff;
+}
+
+#editTaskContainer
+{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#filters
+{
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    padding: 20px 10px;
+    border-radius: 0.25rem;
+    a
+    {
+        text-decoration: none;
+    }
+    span
+    {
+        font-weight: bold;
+    }
+}
+
+.filter-button
+{
+    display: inline-block;
+    margin-top: 20px !important;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
+    &:hover{
+        color: white;
+        background-color: #0069d9;
+    }
+}
+
+
+@media (max-device-width: 1280px) and (orientation:landscape)
+{
+    .side-icon
+    {
+        font-size: 24px;
+    }
+
+    .sideMenuText
+    {
+        display: none;
+    }
+
+}
+
+@include media-breakpoint-down(md) { 
+    .non-dash-main
+    {
+        margin-top: 55.03px !important;
+    }
+
+    .login-form
+    {
+        margin-top: 50px;
+    }
+
+ }
+
+@include media-breakpoint-down(sm) 
+{ 
+    .navbar-brand
+    {
+        font-size: 22px;
+    }
+
+    .non-dash-main
+    {
+        margin-top: 61.43px !important;
+    }
+
+    .jumbotron h1
+    {
+        font-size: 40px;
+    }
+
+    .login-form
+    {
+        margin-top: 20px;
+    }
+
+    #totalSpent
+    {
+        padding: 20px;
+    }
+ }
